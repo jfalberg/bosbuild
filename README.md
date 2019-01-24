@@ -21,4 +21,6 @@ When this project started back in 1999 taking over a previous system that was wr
 
 Fast forward to preparations for 2019 when I am looking into getting a new PC with the goal of keeping all the source in one location where I can utilize both PHP and MySQL where I can better migrate and not be reliant on premium tools such as Access nor Excel to help do the tedious work that can be facilitated using PHP & MySQL scripts wherever appropriately possible.
 
+While the PHP page is currently a work in progress, my current goal is to get the essential functionally to fully work then work on the cosmetics so I can better present this to possible employers that have a demand for my skills at this time.
+
 To be further edited.
