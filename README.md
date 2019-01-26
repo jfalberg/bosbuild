@@ -1,6 +1,8 @@
 # bosbuild
 Boston Buildup Purdy Point results generator
 
+Original source code from 1999: http://www.cs.uml.edu/~phoffman/xcinfo3.html
+
 Boston Buildup homepage: http://clubct.org/Buildup.html
 
 Final standings from 2018: http://clubct.org/Results/18Results/18bball4.htm
