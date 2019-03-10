@@ -6,6 +6,7 @@ Original source code from 1999: http://www.cs.uml.edu/~phoffman/xcinfo3.html
 Boston Buildup homepage: http://clubct.org/Buildup.html
 
 Final standings from 2018: http://clubct.org/Results/18Results/18bball4.htm
+
 Final standings from 2019: http://clubct.org/Results/19Results/19bball4.htm
 
 The Boston Buildup is a series of 4 races from January through March which include a 10k, 15k, 20k and a 25k race.  The participants in all 4 races get their time scored based on their performance and distance.  The faster their time the higher their score.  So each participant can run in up to all 4 races, and based on the calculations from each race, they get ranked overall and by their age category which are as follows:
