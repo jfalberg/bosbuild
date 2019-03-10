@@ -22,7 +22,7 @@ Open Men (OpM) and Open Women (OpW): 29 and under
 
 So if a participant scored 300 in the first race, 200 in the second race, 250 in the third race and 225 in the 4th race, the results would get calculated as follows taking the highest number by 4 and the lowest by 1:
 
-300*4 + 250*3 + 225*2 + 200*1 = (1200+750+450+200) = 2600
+300 * 4 + 250 * 3 + 225 * 2 + 200 * 1 = (1200+750+450+200) = 2600
 
 If they only ran one race, that number gets multiplied by 4 and the rest assume a number of zero.
 
