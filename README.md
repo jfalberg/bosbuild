@@ -26,7 +26,7 @@ So if a participant scored 300 in the first race, 200 in the second race, 250 in
 
 If they only ran one race, that number gets multiplied by 4 and the rest assume a number of zero.
 
-When this project started back in 1999 taking over a previous system that was written in a mainframe environment, the tools I had available at the time included the C source code (will edit this when I find the original source file), FoxPro, Access and Classic ASP to generate the standings page.  When I learned Java, I converted the C source code to Java and made sure the logic still worked.  I would later on re-write the same code in PHP and generate the output so I could import into FoxPro, Access, then migrate over to PHP.
+When this project started back in 1999 taking over a previous system that was written in a mainframe environment, the tools I had available at the time included the C source code (will edit this when I find the original source file), FoxPro, Access and Classic ASP to generate the standings page.  When I learned Java, I converted the C source code to Java and made sure the logic still worked.  I would later on re-write the same code in PHP and generate the output so I could import into FoxPro, Access, then migrate over to MySQL.
 
 Fast forward to preparations for 2019 when I am looking into getting a new PC with the goal of keeping all the source in one location where I can utilize both PHP and MySQL where I can better migrate and not be reliant on premium tools such as Access nor Excel to help do the tedious work that can be facilitated using PHP & MySQL scripts wherever appropriately possible.
 
