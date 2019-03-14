@@ -3,31 +3,6 @@
 <head>
 <meta charset="UTF-8">
 <title>Boston Buildup Purdy Point utility page</title>
-<script type="text/javascript">
-function validate_file(field,alerttxt)
-{
-with (field)
-{
-dotpos=value.tolower.lastIndexOf(".prn");
-if (dotpos<4) 
-  {alert(alerttxt);return false;}
-else {
-  return true;
-  }
-}
-}
-function validate_form(thisform)
-{
-with (thisform)
-{
-if (validate_file(xfile,"Not a valid prn file!")==false)
-  {xfile.focus();return false;}
-}
-   xfilein.value = xfile.value;
-}
-
-</script>
-
 <! https://www.w3schools.com/css/css_navbar.asp >
 <style>
 ul {
@@ -67,14 +42,6 @@ li a:hover:not(.active) {
   <li><a href="bbstand_mysql.php" target="_blank">Results</a></li>
   <li><a href="http://clubct.org/Buildup.html" target="_blank">Buildup</a></li>
 </ul>
-<!--
-<div id="purdyinput">
-<form action="purdy.php" method="post" onsubmit="return validate_form(this);"
- enctype="multipart/form-data">
-
-</form>
-</div>
--->
 
 <?php 
   $data = $_POST['bbbtn'];
