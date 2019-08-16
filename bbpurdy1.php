@@ -59,7 +59,7 @@ li a:hover:not(.active) {
   /*--------- DATABASE CONNECTION INFO---------*/ 
   $hostname="localhost"; 
   $mysql_login="root"; 
-  $mysql_password="accucom250"; 
+  $mysql_password="**********"; 
   $database="bbdata"; 
   
   // connect to the database server 
