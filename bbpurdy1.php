@@ -44,23 +44,48 @@ li a:hover:not(.active) {
 </ul>
 
 <?php 
-  $data = $_POST['bbbtn'];
-  $myFileIn = $_POST['xfilein']; 
-  $xOldName = $_POST['xOldName'];   
-  $xNewName = $_POST['xNewName'];   
-  $xdupname = $_POST['xdupname'];   
-  $xdupcat  = $_POST['xdupcat'];   
+  if (!empty($_POST['bbbtn'])) {
+	  $data = $_POST['bbbtn'];
+  } else {
+	  $data = '';
+  }
+  if (!empty($_POST['xfilein'])) {
+      $myFileIn = $_POST['xfilein']; 
+  } else {
+	  $myFileIn = '';
+  }
+  if (!empty($_POST['xOldName'])) {
+	  $xOldName = $_POST['xOldName']; 
+  } else {
+	  $xOldName = '';
+  }
+  if (!empty($_POST['xNewName'])) {
+	  $xNewName = $_POST['xNewName']; 
+  } else {
+	  $xNewName = '';
+  }
+  if (!empty($_POST['xdupname'])) {
+	  $xdupname = $_POST['xdupname']; 
+  } else {
+	  $xdupname = '';
+  }
+  if (!empty($_POST['xdupcat'])) {
+	  $xdupcat  = $_POST['xdupcat'];  
+  } else {
+	  $xdupcat = '';
+  }
   $runcntDisp = "";
   $xDoBB2 = "N";
 
 /*-------- MySQL ------------*/
   ini_set('display_errors', 'On');
   error_reporting(E_ALL);
-  /*--------- DATABASE CONNECTION INFO---------*/ 
+/*--------- DATABASE CONNECTION INFO---------*/ 
   $hostname="localhost"; 
   $mysql_login="root"; 
-  $mysql_password="**********"; 
+  $mysql_password="accucom250"; 
   $database="bbdata"; 
+
   
   // connect to the database server 
   $link = mysqli_connect($hostname, $mysql_login, $mysql_password);
@@ -84,6 +109,13 @@ li a:hover:not(.active) {
 	 if (strpos($myFileIn, $xtabkey) !== False) {
 	     $xdelim = $xtabkey;
 	 }
+	 $xxFirstName = "";
+	 $xxLastName = "";
+	 $xxAge = "";
+	 $xxCatSex = "";
+	 $xxFirstName = "";
+	 $xxLastName = "";
+	 $xxTime = "";
 	 echo "<pre>";
 
 	 foreach ($lines as &$value) 
@@ -242,7 +274,7 @@ li a:hover:not(.active) {
   {
       $query = file_get_contents("bb2-process.sql");
 	  echo $query;
-	  $mycmd = "\"C:\\Program Files\\MySQL\\MySQL Server 5.1\\bin\\mysql.exe\" -h " . $hostname . " --user=";
+	  $mycmd = "\"C:\\Program Files\\MySQL\\MySQL Server 8.0\\bin\\mysql.exe\" -h " . $hostname . " --user=";
 	  $mycmd = $mycmd . $mysql_login . " --password=" . $mysql_password . " --database=";
 	  $mycmd = $mycmd . $database . " < bb2-process.sql";
 	  echo '<br/><br/>' . $mycmd;
