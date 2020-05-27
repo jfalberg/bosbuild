@@ -1,7 +1,6 @@
-﻿DELIMITER $$
-
-DROP FUNCTION IF EXISTS `bbdata`.`nPoints` $$
-CREATE DEFINER=`root`@`localhost` FUNCTION `nPoints`(a INT, b INT, c INT, d INT) RETURNS int(11)
+﻿DROP FUNCTION IF EXISTS `bbdata`.`nPoints` $$
+CREATE DEFINER=`root`@`localhost` FUNCTION `nPoints`(a INT, b INT, c INT, d INT) RETURNS int
+    NO SQL
 BEGIN
   DECLARE tmp int;
   if (a > b) then
@@ -30,6 +29,4 @@ BEGIN
      set c = tmp;
   end if;
   RETURN a * 1 + b * 2 + c * 3 + d * 4;
-END $$
-
-DELIMITER ;
+END
